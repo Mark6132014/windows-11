@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some European Countries Move to Recognize Palestinian State</title>
+</head>
+<body>
+    <center>
+        <h1>
+            Some European Countries Move to Recognize Palestinian State
+        </h1>
+        <hr>
+        <p id="text">
+            Three European nations said they would recognize an independent Palestinian state, reflecting deepening international frustration with Israel’s war in Gaza, where the Israeli military was moving deeper into Rafah to shore up its control of the besieged enclave’s border with Egypt.
+        </p>
+        <button id="readAloud">
+            Read Aloud
+        </button>
+        <button id="copy">
+            Copy story
+        </button>
+    </center>
+    <script>
+        document.querySelector("#readAloud").addEventListener("click", () => {
+            let speech = new SpeechSynthesisUtterance();
+            speech.text = document.querySelector("#text").innerHTML;
+            window.speechSynthesis.speak(speech);
+        });
+        document.querySelector("#copy").addEventListener("click", () => {
+            navigator.clipboard.writeText(document.querySelector("#text").innerHTML);
+        });
+    </script>
+</body>
+</html>
