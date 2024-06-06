@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=9">
+    <meta http-equiv="x-ua-compatible" content="ie=10">
+    <meta http-equiv="x-ua-compatible" content="ie=11">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>
+        Windows 11
+    </title>
+    <link rel="shortcut icon" href="Icons/start.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body oncontextmenu="return false">
+    <center>
+    <div class="startmenu">
+        <h2>
+            Website:
+        </h2>
+        <a href="https://itzgametime-vip.w3spaces.com">
+            Link
+        </a>
+        <br>
+        <h2>
+            SECRET!!!
+        </h2>
+        <p>
+            Downgrade to Windows 10! (in this page).
+        </p>
+        <a href="https://app.apponfly.com/trial">
+            Go to Windows 10
+        </a>
+        <br>
+        <button onclick="document.querySelector('.startmenu').style.display = 'none';">
+            &times;
+        </button>
+        <hr>
+    </div>
+    </center>
+    <div class="searchmenu">
+        <h2 id="label">
+            Search:
+        </h2>
+        <input type="text" placeholder="Search apps or anything from the web..." size="50" class="searchBarInput">
+        <button onclick="document.querySelector('.searchmenu').style.display = 'none';" style="float: right; font-size: 1.5em; background: transparent; color: black; border: none;">&times;</button>
+        <hr>
+        <div style="overflow-y: scroll; overflow-x: hidden; height: 66vh; width: 300px;" class="searchbar">
+        <div class="app" onclick="new Audio('Sounds/startup.mp3').play(); document.querySelector('.get-started-application').style.display = 'block';">
+            <img src="Icons/get-started.png">
+            <span class="title">
+                Get Started
+            </span>
+        </div>
+        <br>
+        <div class="app" onclick="system.newWebsite('https://bing.com', 'Icons/ms_edge.png', 'New Tab', 180);">
+            <img src="Icons/ms_edge.png">
+            <span class="title">
+                Microsoft Edge (Browser)
+            </span>
+        </div>
+        <br>
+        <div class="app" onclick="taskbar.microsoftStore();">
+            <img src="Icons/ms_store.png">
+            <span class="title">
+                Microsoft Store
+            </span>
+        </div>
+        <br>
+        <div class="app" onclick="document.querySelector('.cmd-prompt').style.display = 'block';">
+            <img src="Icons/cmd.png">
+            <span class="title">
+                Command Prompt
+            </span>
+        </div>
+        <hr>
+        </div>
+        <div class="news" style="float: right;">
+        <h2>
+            Recommended:
+        </h2>
+        <hr>
+        <center><img height="200" width="300" src="Images/news_story.jpg"></center>
+        <h3 class="title">Key moments in the life and presidency of Iran’s Ebrahim Raisi</h3>
+        <button onclick="document.querySelector('.news-application').style.display = 'block';">
+        Learn more news in our blog
+        </button>
+        <hr>
+        <h2>
+            Do you know what day it is?
+        </h2>
+        <h3>
+            It is... Windows 11 Day!
+        </h3>
+        <button>
+            Learn more
+        </button>
+        <hr>
+        <p>
+            Did you know that..
+            <br>
+            If we made a fire, then why are we underwater?
+            <br>
+            -- Patrick Star
+        </p>
+        <hr>
+        <img height="30" width="30" src="Icons/ai.ico">
+        <input type="text" placeholder="Ask Bing AI something, and we will do it for you..." size="50">
+        <hr>
+        <h2>
+            Search Suggestions:
+        </h2>
+        <button>
+            Why is it sunny?
+        </button>
+        <button>
+            How is Albert Einstein smart?
+        </button>
+        <button>
+            Why Windows 11 is so great?
+        </button>
+        <hr>
+        <h2>
+            Related News:
+        </h2>
+        <img src="Images/Related News Stories/news_story1.jpg" height="200" width="300">
+        <h3 class="title">Some European Countries Move to Recognize Palestinian State</h3>
+        <hr>
+        <img src="Images/Related News Stories/news_story2.jpg" height="200" width="300">
+        <h3 class="title">Nvidia’s Sales Triple, Signaling AI Boom’s Staying Power</h3>
+        <hr>
+        <p>
+            Click the Fullscreen button to make better quality and better experience in these videos.
+        </p>
+        <video height="200" loop="true" controls>
+            <source src="Tour Videos/video1.mp4">
+        </video>
+        <video height="200" loop="true" controls>
+            <source src="Tour Videos/video2.mp4">
+        </video>
+        <hr>
+        <h2>
+            Popular Recipes
+        </h2>
+        <img height="100" width="150" src="Images/doughnuts.jpg">
+        <p>
+            Doughnuts
+        </p>
+        <hr>
+        <img height="100" width="150" src="Images/cookies.jpg">
+        <p>
+            The Best Chocolate Chip Cookie Recipe Ever
+        </p>
+        <hr>
+        <img height="100" width="150" src="Images/banana bread.jpg">
+        <p>
+            Best Banana Bread Recipe
+        </p>
+        <hr>
+        <h2>
+            Related Images from the web
+        </h2>
+        <img height="200" src="Images/Backgrounds/rainbow.avif">
+        <img height="200" src="Images/Backgrounds/green.webp">
+        <img height="200" src="Images/Backgrounds/red.jpg">
+        </div>
+    </div>
+    <div class="ms-store-application">
+        <img height="25" width="25" src="Icons/ms_store.png">&ensp;&nbsp;<span>Microsoft Store</span>
+        <button style="float: right; color: white; border: none; background: transparent; font-size: 1.8em;" onclick="document.querySelector('.ms-store-application').style.display = 'none';">&times;</button>
+        <br>
+        <br>
+        <br>
+        <center>
+            <div class="scrollStore">
+        <div class="product">
+            <img src="Icons/Games/subway_surfers.jpg">
+            <span class="title">
+                Subway Surfers
+            </span>
+            <button class="download">
+                Download
+            </button>
+        </div>
+        <br>
+        <div class="product">
+            <img src="Icons/Games/temple_run.jpg">
+            <span class="title">
+                Temple Run
+            </span>
+            <button class="download">
+                Download
+            </button>
+        </div>
+        <br>
+        <div class="product">
+            <img src="Icons/Games/monkey_mart.jpg">
+            <span class="title">
+                Monkey Mart
+            </span>
+            <button class="download">
+                Download
+            </button>
+        </div>
+        <br>
+        <div class="product">
+            <img src="Icons/Games/stickman_hook.jpg">
+            <span class="title">
+                Stickman Hook
+            </span>
+            <button class="download">
+                Download
+            </button>
+        </div>
+        </div>
+        </center>
+    </div>
+    <div class="ms-edge-application">
+        <div style="background: lightgrey; height: 40px; width: 100%; position: absolute; top: 0; left: 0;" class="tabmenu">
+        <img height="29" width="29" src="Images/profile.png" style="position: absolute; top: 5.5px; left: 16px;">
+        <div style="background: rgb(239, 232, 232); color: black; height: 38px; width: 180px; border-top-left-radius: 3px; border-top-right-radius: 3px; position: absolute; top: 2px; left: 61px;" class="tab">
+        <img height="25" width="25" src="Icons/ms_edge.png" style="position: absolute; top: 8px; left: 5px;" id="icon">
+        <span style="position: absolute; top: 8px; left: 38px;" id="title">New tab</span>
+        </div>
+        </div>
+        <img height="30" src="Icons/arrow-left.svg" style="float: left; margin: 3.057% auto; padding: 6px;">
+        <img height="30" src="Icons/reload.svg" style="float: left; margin: 3.15% auto; padding: 6px;">
+        <input type="text" placeholder="Search or enter web address" style="border: 2px solid lightgrey; border-radius: 6px; height: 30px; width: 80%; margin: 3.350% auto" id="web-address" value="https://bing.com">
+        <button style="position: absolute; top: 0; right: 0; z-index: 1; color: black; background: transparent; border: none; font-size: 1.5em;" id="searchBtn">
+        Search
+        </button>
+        <button style="position: absolute; top: 0; right: 85px; z-index: 1; color: black; background: transparent; border: none; font-size: 1.5em;">⋮</button>
+        <button onclick="document.querySelector('.ms-edge-application').style.display = 'none';" style="position: absolute; top: 0; right: 100px; z-index: 1; color: black; background: transparent; border: none; font-size: 1.5em;">&times;</button>
+        <iframe style="height: 79vh; width: 100%; position: absolute; top: 82px; left: 0;" src="https://bing.com" id="website"></iframe>
+    </div>
+    <div class="chat-box">
+        <h3>
+            Chat - Microsoft Teams
+        </h3>
+        <button onclick="document.querySelector('.chat-box').style.display = 'none';" style="position: absolute; top: 0; right: 0;">
+            &times;
+        </button>
+        <hr>
+        <iframe height="400" width="95%" src="https://www.microsoft.com/en-us/microsoft-teams/log-in"></iframe>
+    </div>
+    <div class="change_backgrounds">
+        <h3>
+            Change Backgrounds
+        </h3>
+        <button onclick="document.querySelector('.change_backgrounds').style.display = 'none';">
+            Close &times;
+        </button>
+        <hr>
+        <p>
+            Click on any image you want for your background.
+        </p>
+        <span>
+            <img src="Images/Backgrounds/red.jpg">
+            <h3 class="title">
+                Red with Dark background
+            </h3>
+        </span>
+        <br>
+        <span>
+            <img src="Images/Backgrounds/green.webp">
+            <h3 class="title">
+                Green with Light background
+            </h3>
+        </span>
+        <br>
+        <span>
+            <img src="Images/Backgrounds/yellow.jpg">
+            <h3 class="title">
+                Yellow with Dark background
+            </h3>
+        </span>
+        <br>
+        <span>
+            <img src="Images/Backgrounds/rainbow_compatible.avif">
+            <h3 class="title">
+                Rainbow with Light background
+            </h3>
+        </span>
+        <hr>
+        <span>
+            <h3>
+                Default:
+            </h3>
+            <img src="Images/bg.jpg">
+        </span>
+    </div>
+    <div class="cmd-prompt">
+        <p>
+            Type in a command.../
+        </p>
+        <button onclick="document.querySelector('.cmd-prompt').style.display = 'none';" style="position: absolute; top: 8px; right: 8px; overflow: hidden;">
+        &times;
+        </button>
+        <input type="text" style="position: absolute; bottom: 0; left: 70px; width: 86%;">
+        <button id="execute" style="position: absolute; bottom: 0; left: 0;">
+            Execute
+        </button>
+    </div>
+    <div class="media-player">
+        <img height="30" width="30" src="Icons/media player.png">
+        <span>
+            Media Player
+        </span>
+        <button style="float: right; background: transparent; border: none; color: white; font-size: 1.5em;" onclick="document.querySelector('.media-player').style.display = 'none';">
+        &times;
+        </button>
+        <hr>
+        <video loop controls style="height: 450px; width: 100%;">
+        <source src="Tour Videos/video1.mp4">
+        </video>
+        <button id="play">
+            Play
+        </button>
+        <button id="stop">
+            Stop
+        </button>
+        <button id="fullscreen">
+            Fullscreen
+        </button>
+    </div>
+    <div class="task-view-application">
+        <img src="Images/desktop.png">
+        <span class="desktop-name" style="position: absolute; left: 100px;">
+            Desktop
+        </span>
+        <button class="newDesktop">
+            +
+        </button>
+        <button class="close" onclick="document.querySelector('.task-view-application').style.display = 'none';">
+            &times;
+        </button>
+    </div>
+    <div id="files" onclick="selectWindow()">
+        <div id="fileBar" style="float: left;">
+          <ul>
+            <li>Home</li>
+            <li>Downloads</li>
+            <li>Documents</li>
+            <li>Music</li>
+            <li>Videos</li>
+            <li>Pictures</li>
+            <li>OneDrive</li>
+            <li>This PC</li>
+            <ul>
+              <li>C:\</li>
+              <li>WIN11 D:\</li>
+              <li>Simulator E:\</li>
+            </ul>
+            <li>Trash</li>
+          </ul>
+        </div>
+        <button class="close" onclick="document.querySelector('#files').style.display = 'none';">
+            &times;
+        </button>
+        <h1>My Files</h1>
+        <p>Explore from File Explorer today!</p>
+        <hr>
+        <span>Files</span>
+        <br>
+        <table border="10"><tbody><tr></tr><tr><td>No files in here!</td></tr></tbody></table>
+        <hr>
+        <span>Folders</span>
+        <br>
+        <table border="10"><tbody><tr></tr><tr><td>No folders in here!</td></tr></tbody></table>
+        <hr>
+        <input type="text" placeholder="Type an web address here..." class="address" size="50">
+        <button class="go">Go!</button>
+      </div>
+      <div class="news-application">
+        <h2 id="label">
+            News and Blogs
+        </h2>
+        <button onclick="document.querySelector('.news-application').style.display = 'none';" style="background: transparent; border: none; color: black; font-size: 1.5em; position: absolute; top: 5px; right: 3px;">
+            &times;
+        </button>
+        <hr>
+        <div style="background: grey; color: white; height: calc(100vh - 40px - 100px); width: 250px; float: left; overflow-y: scroll; overflow-x: hidden;">
+            <h3>
+                News and Blog Stories
+            </h3>
+            <input type="text" placeholder="Search for stories...">
+            <hr>
+            <details>
+                <summary>
+                    News
+                </summary>
+                <ul>
+                    <li onclick="changeStoryPage(); story.src = 'Blog/newsStory1.html';">
+                        Key moments in the life and presidency of Iran’s Ebrahim Raisi
+                    </li>
+                    <li onclick="changeStoryPage(); story.src = 'Blog/newsStory2.html';">
+                        Some European Countries Move to Recognize Palestinian State
+                    </li>
+                    <li onclick="changeStoryPage(); story.src = 'Blog/newsStory3.html';">
+                        Nvidia’s Sales Triple, Signaling AI Boom’s Staying Power
+                    </li>
+                </ul>
+            </details>
+            <details>
+                <summary>
+                    Blogs
+                </summary>
+                <ul>
+                    <li onclick="changeStoryPage(); story.src = 'Blog/Lorem ipsum.html';">
+                        Lorem ipsum
+                    </li>
+                    <li onclick="changeStoryPage(); story.src = 'Did you know/index.html';">
+                        Did you know?
+                    </li>
+                </ul>
+            </details>
+        </div>
+        <iframe style="height: calc(100vh - 40px - 80px); width: calc(100% - 270px); position: absolute; top: 70px; right: 5px;" src="data:text/html,<center><h3>Welcome to News and Blogs!</h3><hr><p>Choose a story from the menu</p></center>" id="story" oncontextmenu="return false"></iframe>
+      </div>
+      <div class="news-widget_open">
+        <h4 class="date">
+            Jan 1
+        </h4>
+        <h3>
+            Good evening.
+        </h3>
+        <button onclick="location.reload()" class="reload" style="position: absolute; top: 5px; right: 5px;">
+        Reload
+        </button>
+        <button onclick="document.querySelector('.news-widget_open').style.display = 'none';" style="position: absolute; top: 1px; right: 70px;" class="close">
+        &times;
+    </button>
+        <hr>
+        <div class="widgets">
+            <h5>
+                Widgets
+            </h5>
+            <button style="background: transparent; border: none; color: white; font-size: 1em; position: absolute; top: 5px; right: 5px;">
+            +
+            </button>
+            <hr>
+            <center>
+                <div class="weather">
+                    <h3 class="temperature">
+                        11°F                        
+                    </h3>
+                    <img class="weatherImage" src="Images/MostlySunnyDay.svg">
+                    <br>
+                    <button class="learn-more" onclick="new Audio('Sounds/click.mp3').play();">
+                        Learn more
+                    </button>
+                </div>
+                <br>
+                <div class="pictures">
+                    <span style="font-size: 1.2em; float: left;">
+                        Last week
+                    </span>
+                    <img style="height: 130px; width: 98%;" src="Images/Drive Pictures/image1.jpg">
+                    <img style="height: 110px; width: 95px; float: left;" src="Images/Drive Pictures/image2.jpg">
+                    <img style="height: 110px; float: right;" src="Images/Drive Pictures/image3.jpeg">
+                </div>
+                <br>
+                <div class="sports">
+                    <span style="font-size: 1.2em; float: left">
+                    NFL - Sports
+                    </span>
+                    <br>
+                    <h3>
+                        Whoops,
+                        <br>
+                        Nothing's live!
+                    </h3>
+                    <p class="sorry">
+                        Sorry to hear, [username]. Next time, you can see it!
+                    </p>
+                </div>
+                <br>
+                <div class="games">
+                    <span style="float: left">
+                    Games
+                    </span>
+                    <br>
+                    <hr>
+                    <img style="float: left" src="Icons/Games/subway_surfers.jpg">
+                    <img style="float: right" src="Icons/Games/temple_run.jpg">
+                    <img style="position: absolute; bottom: 15px; left: 0;" src="Icons/Games/monkey_mart.jpg">
+                    <img style="position: absolute; bottom: 15px; right: 0;" src="Icons/Games/stickman_hook.jpg">
+                </div>
+                <br>
+                <div class="top-stories">
+                    <p>
+                        Top stories
+                    </p>
+                    <hr>
+                    <span class="titles">
+                        News story 1
+                    </span>
+                    <br>
+                    <span class="titles">
+                        News story 2
+                    </span>
+                    <br>
+                    <span class="titles">
+                        News story 3
+                    </span>
+                </div>
+                <p>
+                    If you want to see more widgets, <a href>Learn more here!</a>
+                </p>
+            </center>
+        </div>
+        <center style="overflow-y: scroll; overflow-x: hidden; height: calc(calc(100vh - 40px - 20px) - 130px);">
+            <div class="article-thumbnail" style="float: left;">
+                <img src="Images/Backgrounds/rainbow_compatible.avif">
+                <span class="title">
+                    The Windows 11 23H2 will be here soon!
+                </span>
+            </div>
+            <div class="article-thumbnail" style="float: right;">
+            <img src="Images/Related News Stories/news_story1.jpg">
+            <span class="title">
+                Some European Countries Move to Recognize Palestinian State
+            </span>
+            </div>
+            <div class="article-thumbnail" style="float: left;">
+            <img src="Images/news_story.jpg">
+            <span class="title">
+                Key moments in the life and presidency of Iran’s Ebrahim Raisi
+            </span>
+            </div>
+            <div class="article-thumbnail" style="float: right;">
+            <img src="Images/Related News Stories/news_story2.jpg">
+            <span class="title">
+                Nvidia’s Sales Triple, Signaling AI Boom’s Staying Power
+            </span>
+            </div>
+            <div class="article-thumbnail" style="float: left;">
+            <img src="Images/Drive Pictures/image1.jpg">
+            <span class="title">
+                The most beautiful picture ever in the universe!
+            </span>
+            </div>
+            <div class="article-thumbnail" style="float: right;">
+            <img src="Icons/Games/monkey_mart.jpg">
+            <span class="title">
+                The newest game was made today!
+            </span>
+            </div>
+            <div class="article-thumbnail-rectangle">
+            <img src="Images/News stories from news widgets/news_story1.jpg">
+            <span class="title">
+                Hunter Biden gun trial updates: 'No one is above the law,' prosecutor says
+            </span>
+            </div>
+            <div class="article-thumbnail" style="float: left;">
+            <img src="Images/News stories from news widgets/news_story2.jpg">
+            <span class="title">
+                India hands Modi a surprise setback, with his majority in doubt in world's largest election
+            </span>
+            </div>
+            <div class="article-thumbnail" style="float: right;">
+            <img src="Images/News stories from news widgets/news_story3.webp">
+            <span class="title">
+                <span class="ads">AD:</span> People Over 45 Are Playing This Game To Stay Relaxed (Try)
+            </span>
+            </div>
+            <div class="article-thumbnail-rectangle">
+                <img src="Images/News stories from news widgets/news_story4.jpg">
+                <span class="title">
+                    GOP plots revenge in Congress amid raging views on Trump conviction; fundraising surges
+                </span>
+            </div>
+            <div class="article-thumbnail" style="float: left;">
+            <img src="Images/News stories from news widgets/news_story5.jpg">
+            <span class="title">
+                Biden expected to block migrants from asylum at US-Mexico border, sources say
+            </span>
+            </div>
+            <div class="article-thumbnail" style="float: right;">
+            <img src="Images/News stories from news widgets/news_story6.jpg">
+            <span class="title">
+                Dangerous, triple-digit temperatures spread across West Coast
+            </span>
+            </div>
+            <div class="article-thumbnail-rectangle">
+                <img src="Images/News stories from news widgets/news_story7.jpg">
+                <span class="title">
+                    Mystery Columbia alum donates $260 million to Israeli college
+                </span>
+            </div>
+            <div class="article-thumbnail" style="float: left;">
+            <img src="Images/News stories from news widgets/news_story8.jpg">
+            <span class="title">
+                3-year-old boy stabbed to death in random attack at grocery store parking lot
+            </span>
+            </div>
+            <div class="article-thumbnail" style="float: right;">
+            <img src="Images/News stories from news widgets/news_story9.jpg">
+            <span class="title">
+                US Attorney General to House Republicans: 'I will not be intimidated'
+            </span>
+            </div>
+            <div class="article-thumbnail-rectangle">
+                <img src="Images/News stories from news widgets/news_story10.jpg">
+                <span class="title">
+                    New Jersey man stabs mother to death while she was sleeping: Police...more
+                </span>
+            </div>
+            <div class="article-thumbnail" style="float: left;">
+            <img src="Images/News stories from news widgets/news_story11.jpg">
+            <span class="title">
+                Lawmakers expensed millions in 2023 under new program that doesn’t require...more
+                </span>
+            </div>
+            <div class="article-thumbnail" style="float: right;">
+            <img src="Images/News stories from news widgets/news_story12.jpg">
+            <span class="title">
+                Tractors rumble in streets again ahead of EU polls. Farming is a big issue and the far right pounces
+            </span>
+            </div>
+            <div class="article-thumbnail-rectangle">
+            <img src="Images/News stories from news widgets/news_story13.jpg">
+            <span class="title">
+                New Jersey Democrats to pick replacement for embattled US Senator Menendez
+            </span>
+            </div>
+            </center>
+      </div>
+      <div class="controls-menu">
+        <span class="battery"></span>
+        <button onclick="document.querySelector('.controls-menu').style.display = 'none';" style="font-size: 1em; color: black; background: transparent; border: none; position: absolute; top: 5px; right: 5px;">
+        &times;
+        </button>
+        <br>
+        <span style="float: left">
+        <img height="40" style="border-radius: 3px;" src="Images/System Tray/wifi.png">
+        <br>
+        <span>
+            WIFI-5G_network
+        </span>
+        </span>
+        <span style="float: right">
+        <img height="40" style="border-radius: 3px;" src="Images/System Tray/bluetooth.png">
+        <br>
+        <span>
+            Bluetooth
+        </span>
+        </span>
+      </div>
+      <div class="get-started-application">
+        <img height="25" width="25" style="position: absolute; top: 1px; left: 2px;" src="Icons/get-started.png">
+        <span style="position: absolute; top: 4px; left: 34px;">
+        Get Started
+        </span>
+        <button onclick="document.querySelector('.get-started-application').style.display = 'none';" class="close">
+        &times;
+        </button>
+        <img height="450" width="450" style="position: absolute; top: 80px; right: 100px;" src="Icons/get-started.png">
+        <img height="200" width="250" style="position: absolute; top: 70px; right: 530px;" src="Images/rewards.png">
+        <div class="getStartedWithOptions" style="height: 80vh; width: 300px; position: absolute; top: 60px; left: 100px; overflow-y: scroll; overflow-x: hidden;">
+            <h2 class="hi">
+                Welcome.
+            </h2>
+            <p>
+                Options for you and updates and problems, too!
+            </p>
+            <hr>
+            <center>
+                <input type="text" size="40" placeholder="Search a program or web address to begin the fun">
+                <br>
+                <img src="Images/profile.png" height="100" width="100" class="profile" onclick="alert('Your profile custimization is disabled by your adminstrator.');">
+            </center>
+            <input type="text" size="40" placeholder="Your new username" id="username">
+            <button id="changeUsername">
+                Change Username
+            </button>
+            <input type="text" size="40" placeholder="Activation Reminder Text" id="activatereminder">
+            <small>
+                To see the reminder, click the activation text at the bottom right corner.
+            </small>
+            <button onclick="submitActivationReminder()">
+            Set Reminder
+            </button>
+            <hr>
+            <h2>
+                Notes and Problems:
+            </h2>
+            <p>
+                Note:
+                <br>
+                When you click a icon from the taskbar, the
+                <br>
+                animation will go in the wrong position.
+                <br>
+                We cannot fix it.
+            </p>
+            <p>
+                Note 2:
+                <br>
+                If the browser says that it is blocked,
+                <br>
+                Some sites require you to have the exact
+                <br>
+                domain.
+                <br>
+                We cannot fix that, too.
+            </p>
+            <p>
+                Note 3:
+                <br>
+                If you want to change your wallpaper,
+                <br>
+                that does not work, too, because the
+                <br>
+                wallpaper would be very big.
+            </p>
+            <hr>
+            <h2>
+                Updates:
+            </h2>
+            <p>
+                Update 1:
+                <br>
+                We added News Widgets, open the news icon from
+                <br>
+                your taskbar to get an enriched look at it!
+            </p>
+            <p>
+                Update 2:
+                <br>
+                Microsoft Store is now open, and has lots of games,
+                <br>
+                apps, and more.
+            </p>
+            <p>
+                Update 3:
+                <br>
+                If you opened a website which are applications,
+                <br>
+                some of them from your desktop, It opens the browser,
+                <br>
+                opens the website, and Voila!
+            </p>
+            <p>
+                Update 4:
+                <br>
+                We changed File Explorer's theme to dark mode!
+                <br>
+                Go to File Explorer from your taskbar to take a
+                <br>
+                enriched look at it!
+            </p>
+            <p>
+                Update 5:
+                <br>
+                We added tabs to your browser! Go to Microsoft
+                <br>
+                Edge to take a enriched look at it!
+            </p>
+        </div>
+      </div>
+      <div class="right-click">
+        <button onclick="location.reload();" style="cursor: url('Cursors/default.webp'), auto;">
+        Reload
+        </button>
+        <br>
+        <button onclick="document.querySelector('.change_backgrounds').style.display = 'block';">
+            Change Background
+        </button>
+        <br>
+        <button onclick="window.print()">
+        Print page
+        </button>
+        <br>
+        <button onclick="document.querySelector('.right-click').style.display = 'none';">
+        Close
+        </button>
+        <small style="position: absolute; bottom: 0;">
+            Windows 11 Home 23H2 10.100.1000.567.1
+        </small>
+    </div>
+    <span class="recycle-bin">
+        <img src="Icons/recycle_bin_empty.webp" id="desktop-icon" class="trash">
+        <br>
+        <span>
+            Recycle
+            <br>
+            &ensp;&nbsp;Bin
+        </span>
+    </span>
+    <br>
+    <br>
+    <span class="microsoft-edge" onclick="document.querySelector('.ms-edge-application').style.display = 'block';">
+        <img src="Icons/ms_edge.png" id="desktop-icon">
+        <br>
+        <span>
+            &ensp;Edge
+        </span>
+    </span>
+    <br>
+    <br>
+    <span class="cmd" onclick="document.querySelector('.cmd-prompt').style.display = 'block';">
+        <img src="Icons/cmd.png" id="desktop-icon">
+        <br>
+        <span>
+            &ensp;CMD
+        </span>
+    </span>
+    <br>
+    <br>
+    <span class="smb" onclick="system.newWebsite('https://supermario-game.com/mario-game/mario.html', 'Icons/smb.png', 'Super Mario Bros.', 200);">
+        <img src="Icons/smb.png" id="desktop-icon">
+        <br>
+        <span>
+            Super
+            <br>
+            Mario B..
+        </span>
+    </span>
+    <br>
+    <br>
+    <span class="news-app" onclick="document.querySelector('.news-application').style.display = 'block';">
+        <img src="Icons/news.jpg" id="desktop-icon">
+        <br>
+        <span>
+            &ensp;News
+        </span>
+    </span>
+    <span class="reportbug" style="position: absolute; top: 8px; left: 73px;" onclick="prompt('What is the problem? Answer it, then tell it to the owner.');">
+        <img src="Icons/bug.jpg" id="desktop-icon">
+        <br>
+        <span>
+            Report
+            <br>
+            &ensp;Bug
+        </span>
+    </span>
+    <br>
+    <br>
+    <span class="reset" style="position: absolute; top: 127px; left: 73px;" onclick="location.reload()">
+        <img src="Icons/start.png" id="desktop-icon">
+        <br>
+        <span>
+            &ensp;Reset
+        </span>
+    </span>
+    <br>
+    <br>
+    <span class="windows95" onclick="system.newWebsite('https://windows96.net', 'Icons/virtualbox.png', 'VirtualBox', 180);" style="position: absolute; top: 227px; left: 73px;">
+        <img src="Icons/virtualbox.png" id="desktop-icon" style="border-radius: 8px;">
+        <br>
+        <span>
+            Virtual
+            <br>
+            box Ma..
+        </span>
+    </span>
+    <br>
+    <br>
+    <span class="mediaplayer" style="position: absolute; top: 327px; left: 73px;" onclick="document.querySelector('.media-player').style.display = 'block';">
+        <img src="Icons/media player.png" id="desktop-icon">
+        <br>
+        <span>
+            &nbsp;Media
+            <br>
+            &nbsp;Player
+        </span>
+    </span>
+    <div class="taskbar">
+        <center>
+            <span class="start" onclick="new Audio('Sounds/startup.mp3').play(); taskbar.start();"></span>
+            <span class="search" onclick="taskbar.search();"></span>
+            <span class="task_view" onclick="taskbar.taskView();"></span>
+            <span class="news-widget" onclick="taskbar.news();"></span>
+            <span class="chat" onclick="taskbar.chat();"></span>
+            <span class="explorer" onclick="taskbar.explorer();"></span>
+            <span class="ms-store" onclick="taskbar.microsoftStore();"></span>
+            <span class="ms-edge" onclick="taskbar.browser();"></span>
+            <span class="itzgametimevip" onclick="taskbar.MyWebsite();"></span>
+            <span class="copilot-ai" onclick="new Audio('Sounds/error.mp3').play();"></span>
+        </center>
+        <span class="timedate">
+            12:00:00
+        </span>
+        <span style="color: black; position: absolute; bottom: 1.33px; right: 80px; text-align: center;">
+            ENG
+            <br>
+            US
+        </span>
+        <span style="position: absolute; bottom: 1.33px; right: 120px; content: url('Images/system\ tray\ icons.png'); height: 30px;" class="controls"></span>
+        <span style="position: absolute; bottom: 1.33px; right: 230px; content: url('Icons/security.png'); height: 30px; width: 30px;">
+        </span>
+        <span class="accessibility" style="position: absolute; bottom: 1.33px; right: 260px; content: url('Icons/sethc.webp'); border-radius: 50%; height: 30px; width: 30px;">
+        </span>
+    </div>
+    <div class="welcome">
+        <img src="Icons/startIconPressed.png">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <center>
+            Welcome
+        </center>
+    </div>
+    <h2 id="activate"><span>
+        Mark David Holloway
+    </span></h2>
+    <script src="index.js"></script>
+</body>
+</html>
