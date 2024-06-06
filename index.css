@@ -17,24 +17,16 @@ body {
         background: url("Images/Backgrounds/yellow.jpg");
         background-size: 100% 100vh;
     }
-    20% {
+    25% {
         background: url("Images/Backgrounds/red.jpg");
         background-size: 100% 100vh;
     }
-    40% {
+    50% {
         background: url("Images/Backgrounds/green.webp");
         background-size: 100% 100vh;
     }
-    60% {
-        background: url("Images/Backgrounds/rainbow_compatible.avif");
-        background-size: 100% 100vh;
-    }
-    80% {
-        background: url("Images/lightBg.jpg");
-        background-size: 100% 100vh;
-    }
     100% {
-        background: url("Images/bg.jpg");
+        background: url("Images/Backgrounds/rainbow_compatible.avif");
         background-size: 100% 100vh;
     }
 }
