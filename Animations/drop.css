@@ -1,0 +1,12 @@
+@keyframes drop {
+    from {
+        position: fixed;
+        top: 0;
+        right: 40px;
+    }
+    to {
+        position: fixed;
+        bottom: 30px;
+        right: 40px;
+    }
+}
