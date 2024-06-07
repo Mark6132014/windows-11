@@ -94,6 +94,7 @@ var taskbar = {
     start: function() {
         document.querySelector(".startmenu").style.display = "block";
         document.querySelector(".startmenu").style.animation = "pressedStart linear 0.398s 1";
+        document.querySelector("#activate").style.display = "none";
     },
     search: function() {
         document.querySelector(".searchmenu").style.display = "block";
@@ -204,3 +205,4 @@ function toggleControlMenu() {
 }
 document.querySelector(".controls").addEventListener("click", toggleControlMenu);
 document.querySelector(".get-started-application .getStartedWithOptions .hi").innerHTML = "Welcome back, " + name + "!";
+document.querySelector(".startmenu .profile .name").innerHTML = "&ensp;" + name;
